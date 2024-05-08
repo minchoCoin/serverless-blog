@@ -1,5 +1,5 @@
-# serverless-blog
-Serverless blog for term project of Cloud Computing course
+# stt-service
+Speech To Text webpage using Azure Speech-To-Text
 # details
 more details soon...
 
