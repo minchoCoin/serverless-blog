@@ -1,5 +1,5 @@
 # stt-service
-Speech To Text webpage using Azure Speech-To-Text
+Speech To Text webpage using AWS Transcribe, Lambda, S3, CloudWatch, Amazon SES
 # details
 more details soon...
 
