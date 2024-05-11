@@ -11,7 +11,7 @@ more details soon...
 - 김성문
 - 박재열
 
-# reference
+# references
 - [https://devocean.sk.com/blog/techBoardDetail.do?ID=163934](https://devocean.sk.com/blog/techBoardDetail.do?ID=163934)
 - [https://aws.amazon.com/ko/what-is/serverless-computing/](https://aws.amazon.com/ko/what-is/serverless-computing/)
 - [https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html)
