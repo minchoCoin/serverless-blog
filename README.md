@@ -15,6 +15,7 @@ more details soon...
 - [https://devocean.sk.com/blog/techBoardDetail.do?ID=163934](https://devocean.sk.com/blog/techBoardDetail.do?ID=163934)
 - [https://aws.amazon.com/ko/what-is/serverless-computing/](https://aws.amazon.com/ko/what-is/serverless-computing/)
 - [https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html)
+- cloudtype 사용 : [link](https://duckgugong.tistory.com/336)
 - 파일 업로드 웹 페이지 구축 : [link](https://heytech.tistory.com/403)
 - s3 trigger lambda(and lambda call transcribe) : [link](https://medium.com/@manishdiddi03/automating-audio-transcription-how-to-use-aws-api-gateway-s3-sns-lambda-and-transcribe-to-20c220b1e77f)
 - sending email : [link](https://aws.amazon.com/ko/blogs/media/amazon-transcribe-and-email-integration/)
