@@ -21,5 +21,6 @@ more details soon...
 - sending email : [link](https://aws.amazon.com/ko/blogs/media/amazon-transcribe-and-email-integration/)
 - using CloudWatch : [link](https://medium.com/analytics-vidhya/transcribing-audio-files-with-amazon-transcribe-lambda-s3-474dc9a1ced7)
 - connect lambda and RDS DB : [link](https://velog.io/@chaduri7913/AWS-RDS-Lambda-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0)
+    - https://jane-aeiou.tistory.com/51
 # license
 [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0)
