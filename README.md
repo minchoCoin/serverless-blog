@@ -23,5 +23,5 @@ more details soon...
 - connect lambda and RDS DB : [link](https://velog.io/@chaduri7913/AWS-RDS-Lambda-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0)
     - https://jane-aeiou.tistory.com/51
 - google SMTP 사용 : [https://icedhotchoco.tistory.com/entry/sending-email-with-python](https://icedhotchoco.tistory.com/entry/sending-email-with-python)
-# license
+- lambda-multipart-parser 사용방법 : [https://www.npmjs.com/package/lambda-multipart-parser](https://www.npmjs.com/package/lambda-multipart-parser)
 [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0)
