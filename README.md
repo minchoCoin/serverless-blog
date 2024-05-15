@@ -25,5 +25,6 @@ more details soon...
 - google SMTP 사용 : [https://icedhotchoco.tistory.com/entry/sending-email-with-python](https://icedhotchoco.tistory.com/entry/sending-email-with-python)
 - lambda-multipart-parser 사용방법 : [https://www.npmjs.com/package/lambda-multipart-parser](https://www.npmjs.com/package/lambda-multipart-parser)
 - multipart/form-data 사용을 위한 api gateway 설정 : [https://developer-syubrofo.tistory.com/95](https://developer-syubrofo.tistory.com/95)
+  - 더 정확 : [https://pinchoflogic.com/multiplepartfrom-data-aws-api-gateway-lambda](https://pinchoflogic.com/multiplepartfrom-data-aws-api-gateway-lambda)
 # License
 [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0)
