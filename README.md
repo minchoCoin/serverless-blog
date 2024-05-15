@@ -24,4 +24,6 @@ more details soon...
     - https://jane-aeiou.tistory.com/51
 - google SMTP 사용 : [https://icedhotchoco.tistory.com/entry/sending-email-with-python](https://icedhotchoco.tistory.com/entry/sending-email-with-python)
 - lambda-multipart-parser 사용방법 : [https://www.npmjs.com/package/lambda-multipart-parser](https://www.npmjs.com/package/lambda-multipart-parser)
+
+# License
 [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0)
