@@ -74,7 +74,7 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 
 # 프로젝트 개발 결과물
 ## 구상도
-![image](https://github.com/minchoCoin/stt-service/assets/62372650/9b033e96-a68d-418f-aa89-0d795bb84023)
+![image](https://raw.githubusercontent.com/minchoCoin/stt-service/main/diagram/diagram.png)
 
 1. 사용자가 cloudfront를 통해 정적 웹페이지에 접속한다.
 
