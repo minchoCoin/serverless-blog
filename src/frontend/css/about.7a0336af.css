@@ -1,1 +1,8 @@
-.btn-color[data-v-68900ef1]{background-color:#226cf6;color:#fff}a[data-v-68900ef1]{text-decoration:none}
+.btn-color[data-v-68900ef1] {
+    background-color: #226cf6;
+    color: #fff
+}
+
+a[data-v-68900ef1] {
+    text-decoration: none
+}
