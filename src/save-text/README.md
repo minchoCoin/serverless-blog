@@ -52,11 +52,11 @@
     {
       "Effect": "Allow",
       "Action": [
+        // 특정 Lambda 함수의 로그 스트림을 생성하고 로그 이벤트를 기록할 수 있는 권한
         "logs:CreateLogStream",
         "logs:PutLogEvents"
       ],
       "Resource": [
-        // 특정 Lambda 함수의 로그 스트림을 생성하고 로그 이벤트를 기록할 수 있는 권한
         "arn:aws:logs:ap-northeast-2:your-account-id:log-group:/aws/lambda/this-lambda-function:*"
       ]
     },
