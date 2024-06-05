@@ -114,6 +114,6 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 - connect lambda and RDS DB : [link](https://velog.io/@chaduri7913/AWS-RDS-Lambda-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0)
     - https://jane-aeiou.tistory.com/51
 - google SMTP 사용 : [https://icedhotchoco.tistory.com/entry/sending-email-with-python](https://icedhotchoco.tistory.com/entry/sending-email-with-python)
-
+- vpc ipv6 setting : [https://hossamelshahawi.com/2021/10/24/fix-errno97-address-family-not-supported-by-protocol/](https://hossamelshahawi.com/2021/10/24/fix-errno97-address-family-not-supported-by-protocol/)
 # License
 [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0)
