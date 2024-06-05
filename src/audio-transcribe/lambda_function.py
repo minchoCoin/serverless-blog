@@ -56,11 +56,11 @@ def lambda_handler(event, context):
             LanguageCode=languageCode,
             MediaFormat='mp3',
             Media={
-                # 'MediaFileUri': f's3://{bucketName}/{baseFileName}'
-                'MediaFileUri': f's3://{bucketName}/input_audio/{jobName}'
+                'MediaFileUri': f's3://{bucketName}/{baseFileName}'
             },
-            OutputBucketName=bucketName, # 음성 파일이 저장된 버킷과 같은 버킷을 사용하고, 디렉토리로 구분함. 다른 버킷을 사용하려면 코드 수정하기
-            OutputKey=f'output_text/{fileName}.json'
+            # 저장은 save_text 람다에서 수행
+            # OutputBucketName=bucketName,
+            # OutputKey=f'output_text/{fileName}.json'
         )
         body = {
             'message' : 'Transcribe job started',
