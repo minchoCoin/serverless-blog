@@ -1,30 +1,29 @@
 // file-processing-service.js
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
-import buildRes from "./util.mjs"
-const bucketName = 'mybucket'; // S3 버킷이름 입력
+const bucketName = 'mybucketName'; // S3 버킷이름 입력
 const s3Subfolder = 'input_audio';
 const client = new S3Client({});
-
+import buildRes from "./util.mjs"
 
 import mysql from "mysql2/promise.js";
 const pool = mysql.createPool({
-    host: 'mysqldbhost.xxxxxxxxxxxx.ap-region.rds.amazonaws.com',
-    database: 'mysqldb',
+    host: 'mysqldb.xxxxxxxxxxx.myregion.rds.amazonaws.com',
+    database: 'testdb',
     user: 'username',
-    password: 'mypassword',
+    password: 'password',
     port: 3306,
     connectionLimit: 20,
 });
 
+let filename='test'
 
-
-async function process(requestBody,context){
+export async function process(requestBody,context){
     //console.log(requestBody);
     let response;
     const tmp = requestBody.split('\r\n');
     
     const email =tmp[3].replace(/^"|$/g, '').trim();
-    let filename=tmp[7].replace(/^"|$/g, '').trim();
+    filename=tmp[7].replace(/^"|$/g, '').trim();
     const languagecode = tmp[11].replace(/^"|$/g, '').trim();
     const byteCharacters = Buffer.from(tmp[16].trim(), 'base64');
     
@@ -46,7 +45,22 @@ async function process(requestBody,context){
   }
     
     
-const command = new PutObjectCommand({
+
+    
+}
+
+
+
+export async function upload(requestBody,context){
+    let response;
+    const tmp = requestBody.split('\r\n');
+    
+    const email =tmp[3].replace(/^"|$/g, '').trim();
+    const languagecode = tmp[11].replace(/^"|$/g, '').trim();
+    const byteCharacters = Buffer.from(tmp[16].trim(), 'base64');
+    
+    
+    const command = new PutObjectCommand({
     Bucket: bucketName,
     Key: `${s3Subfolder}/${filename}`,
     Body: byteCharacters
@@ -63,7 +77,4 @@ const command = new PutObjectCommand({
         console.error('Error uploading file to S3:', error);
         return buildRes(500,{'message' : 'error uploading file to S3'});
     }
-    
 }
-
-export default process;

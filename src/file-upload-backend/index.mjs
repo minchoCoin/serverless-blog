@@ -1,8 +1,8 @@
 
-import buildRes from "./util.mjs"
+import buildRes from "./util.mjs";
 
-import fileProcessingService from "./file-processing-service.mjs"
-const fileUploadPath = '/file-upload'
+import {process,upload} from "./file-processing-service.mjs";
+const fileUploadPath = '/file-upload';
 
 
 
@@ -11,7 +11,8 @@ export const handler = async (event, context) => {
   //console.log('Request Event: ', event);
     let response;
     if (event.httpMethod === 'POST' && event.path === fileUploadPath){
-        response = await fileProcessingService(event.body,context);
+        response = await process(event.body,context);
+        response = await upload(event.body,context);
         return response;
       }
             
