@@ -25,8 +25,8 @@ def lambda_handler(event, context):
     file_path = '/tmp/' + key.split('/')[-1]  # 파일 이름만 추출하여 사용
     s3.download_file(bucket, key, file_path)
     
-    # 원본 파일 이름 추출
-    original_file_name = key.replace('.txt', '')
+    # 원본 파일 이름 추출 및 .mp3 확장자로 변환
+    original_file_name = key.split('/')[-1].replace('.txt', '.mp3')
     # print(f"Processed original file name: {original_file_name}")
     
     # RDS에서 이메일 주소 조회
@@ -51,7 +51,7 @@ def get_recipient_email_from_rds(file_name):
     try:
         with connection.cursor(pymysql.cursors.DictCursor) as cursor:
             # 올바른 테이블 이름을 사용하여 쿼리 실행
-            sql = "SELECT email FROM audio_file_email_info WHERE filename = %s"
+            sql = "SELECT email FROM fileTable WHERE filename = %s"
             cursor.execute(sql, (file_name,))
             result = cursor.fetchone()
             if result:
@@ -68,7 +68,7 @@ def send_email_with_attachment(to_email, file_path, file_name):
     msg = MIMEMultipart()
     msg['From'] = from_email
     msg['To'] = to_email
-    msg['Subject'] = 'Your file has been uploaded'
+    msg['Subject'] = 'Your file has been uploaded. transcribe complete'
 
     # 이메일 본문 작성
     body = MIMEText('Please find the attached file.', 'plain')
