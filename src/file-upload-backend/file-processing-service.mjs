@@ -23,7 +23,7 @@ export async function process(requestBody,context){
     const tmp = requestBody.split('\r\n');
     
     const email =tmp[3].replace(/^"|$/g, '').trim();
-    filename=tmp[7].replace(/^"|$/g, '').trim();
+    filename=tmp[7].replace(/^"|$/g, '').replace(/(\s*)/g, "").trim();
     const languagecode = tmp[11].replace(/^"|$/g, '').trim();
     const byteCharacters = Buffer.from(tmp[16].trim(), 'base64');
     
