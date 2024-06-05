@@ -95,10 +95,40 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 13. s3에 변환결과가 업로드되면 send_email 람다 함수를 호출한다.
 14. RDS DB에서 파일이름에 해당하는 이메일 주소 얻음
 15. google SMTP를 사용하여 변환 결과를 파일 형태로 전송
+
+구성 방법: [link](https://github.com/minchoCoin/stt-service/blob/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%B6%95.pdf)
+
+## 결과물 소개
+
+동작 영상 : [link](https://youtu.be/KWpaLcgWzTE)
+
+녹음파일 출처 : [link](https://www.nexusbook.com/innerFile/book/book_details.asp?bookID=6000)
+
+![캡처15](https://github.com/minchoCoin/stt-service/assets/62372650/73158ad5-2231-4bad-8074-bb2835dd78ed)
+![캡처13](https://github.com/minchoCoin/stt-service/assets/62372650/6d626f05-a85e-4e44-b99e-adcfda1f03f8)
+![캡처2](https://github.com/minchoCoin/stt-service/assets/62372650/1f198dd1-5964-4758-98cd-a66efc284c33)
+![캡처4](https://github.com/minchoCoin/stt-service/assets/62372650/b9fc19ba-3554-4c4d-999c-ef06cef2fcf7)
+![캡처5](https://github.com/minchoCoin/stt-service/assets/62372650/0ae19802-91a1-4c90-a6cc-2ffe2102fd2e)
+![캡처6](https://github.com/minchoCoin/stt-service/assets/62372650/d0c4f8f6-0047-4a19-9b9b-c95044ec382d)
+![캡처7](https://github.com/minchoCoin/stt-service/assets/62372650/3439b52f-67d4-45a6-8539-892e5cddfd62)
+![캡처8](https://github.com/minchoCoin/stt-service/assets/62372650/6af4c5f0-02d7-420f-b2dd-968133826afb)
+![캡처9](https://github.com/minchoCoin/stt-service/assets/62372650/88cfc02d-0442-487f-a6e8-4d5c437f7bdf)
+![캡처10](https://github.com/minchoCoin/stt-service/assets/62372650/e4bba53f-1aa3-4e2d-8b91-5ccd4aeabbc3)
+![캡처11](https://github.com/minchoCoin/stt-service/assets/62372650/b2904716-490a-42f5-9260-59354cb64bdf)
+![캡처12](https://github.com/minchoCoin/stt-service/assets/62372650/67bf1a27-f7c0-4b91-943a-e4445a1b5929)
+
+
 # 사용 방법
 
-# 활용방안
+![캡처15](https://github.com/minchoCoin/stt-service/assets/62372650/73158ad5-2231-4bad-8074-bb2835dd78ed)
+![캡처13](https://github.com/minchoCoin/stt-service/assets/62372650/6d626f05-a85e-4e44-b99e-adcfda1f03f8)
+![캡처2](https://github.com/minchoCoin/stt-service/assets/62372650/1f198dd1-5964-4758-98cd-a66efc284c33)
+![캡처4](https://github.com/minchoCoin/stt-service/assets/62372650/b9fc19ba-3554-4c4d-999c-ef06cef2fcf7)
+![캡처10](https://github.com/minchoCoin/stt-service/assets/62372650/e4bba53f-1aa3-4e2d-8b91-5ccd4aeabbc3)
+![캡처11](https://github.com/minchoCoin/stt-service/assets/62372650/b2904716-490a-42f5-9260-59354cb64bdf)
 
+# 활용방안
+more details soon...
 
 # references
 - [https://devocean.sk.com/blog/techBoardDetail.do?ID=163934](https://devocean.sk.com/blog/techBoardDetail.do?ID=163934)
