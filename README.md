@@ -76,6 +76,7 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 (그림 2 클로바노트에서 AI요약을 실행한 장면 [출처](https://blog.naver.com/clova_ai/222846847424))
 
 # 프로젝트 개발 결과물
+## 파일 설명
 ## 구상도
 ![image](https://raw.githubusercontent.com/minchoCoin/stt-service/main/diagram/diagram.png)
 
