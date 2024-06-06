@@ -5,6 +5,8 @@ AWS Transcribe를 사용한 음성을 글자로 변환(Speech-To-Text)해주는 
 
 - AWS Transcribe를 사용한 음성노트(SpeechNote) 웹사이트 제작
 
+웹사이트 결과물 링크 : [https://d3yte1ymgtgsl.cloudfront.net/](https://d3yte1ymgtgsl.cloudfront.net/)
+
 # 프로젝트 멤버 및 역할 분담
 | name | part |
 |------|------|
@@ -166,6 +168,8 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 구성 방법: [link](https://github.com/minchoCoin/stt-service/blob/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%B6%95.pdf)
 
 ## 결과물 소개
+
+웹사이트 결과물 링크 : [https://d3yte1ymgtgsl.cloudfront.net/](https://d3yte1ymgtgsl.cloudfront.net/)
 
 동작 영상 : [link](https://youtu.be/KWpaLcgWzTE)
 
