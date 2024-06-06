@@ -49,6 +49,7 @@ fileTable(
 ## AWS CloudWatch and EventBridge 
 AWS에서 제공하는 모니터링 서비스이다. 원래는 리소스 사용률 등을 모니터링할 수 있고, 일정 사용률 초과 등의 이벤트가 발생하면 사용자에게 알리는 기능을 가지고 있다. 이 프로젝트에서는 이를 활용하여, 오디오 텍스트 변환이 완료되면, 이를 CloudWatch가 탐지한다. EventBridge가 CloudWatch에서 텍스트 변환 완료 이벤트가 생성된 것을 확인하고, 이메일을 보내는 lambda 함수를 호출하게 된다.
 Transcribe를 요청하는 lambda 함수에서 이메일까지 처리하지 않는 이유는, lambda 함수의 동작 시간은 최대 15분인데, 변환은 그보다 오래 걸릴 수 있기 때문이다.
+
 ![image](https://github.com/minchoCoin/stt-service/assets/62372650/568eea2d-8007-418d-8127-34ea4460aecd)
 
 cloudwatch에서 이벤트를 감지하면, EventBridge가 lambda 함수를 호출한다.
