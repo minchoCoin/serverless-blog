@@ -6,6 +6,7 @@ AWS Transcribe를 사용한 음성을 글자로 변환(Speech-To-Text)해주는 
 - AWS Transcribe를 사용한 음성노트(SpeechNote) 웹사이트 제작
 
 웹사이트 결과물 링크 : [https://d3yte1ymgtgsl.cloudfront.net/](https://d3yte1ymgtgsl.cloudfront.net/)
+
 깃허브 링크 : [https://github.com/minchoCoin/stt-service](https://github.com/minchoCoin/stt-service)
 
 # 프로젝트 멤버 및 역할 분담
