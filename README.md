@@ -177,7 +177,7 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 
 ### 웹페이지
 
-**note**
+[!NOTE]
 AWS lambda 함수는 6MB를 초과하는 요청은 거절하도록 설정되어있어
 약 6MB이상의 음성파일은 업로드할 수 없습니다. 참고: [aws lambda docs](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/gettingstarted-limits.html)
 
@@ -226,6 +226,7 @@ Day one. Do you have any seats available? I'm afraid all flights are fully booke
 
 ### cloudfront 설정
 ![image](https://github.com/minchoCoin/stt-service/assets/62372650/1f6e2b43-4f77-4b3b-ac56-7e5d69468f31)
+
 cloudfront를 사용하여 s3에 있는 정적 웹사이트를 호스팅한다. cloudfront를 사용하면 https가 적용된다.
 
 ### API GateWay 생성 및 람다 함수 연결
