@@ -165,17 +165,21 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 14. RDS DB에서 파일이름에 해당하는 이메일 주소 얻음
 15. google SMTP를 사용하여 변환 결과를 파일 형태로 전송
 
-구성 방법: [link](https://github.com/minchoCoin/stt-service/blob/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%B6%95.pdf)
+구성 방법: [pdf 참고](https://github.com/minchoCoin/stt-service/blob/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%B6%95.pdf)
 
 ## 결과물 소개
 
 웹사이트 결과물 링크 : [https://d3yte1ymgtgsl.cloudfront.net/](https://d3yte1ymgtgsl.cloudfront.net/)
 
-동작 영상 : [link](https://youtu.be/KWpaLcgWzTE)
+동작 영상 : [youtube link](https://youtu.be/KWpaLcgWzTE)
 
 녹음파일 출처 : [link](https://www.nexusbook.com/innerFile/book/book_details.asp?bookID=6000)
 
 ### 웹페이지
+
+**note**
+AWS lambda 함수는 6MB를 초과하는 요청은 거절하도록 설정되어있어
+약 6MB이상의 음성파일은 업로드할 수 없습니다. 참고: [aws lambda docs](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/gettingstarted-limits.html)
 
 ![캡처15](https://github.com/minchoCoin/stt-service/assets/62372650/73158ad5-2231-4bad-8074-bb2835dd78ed)
 (사진1 : 웹페이지를 들어가면 홈 화면은 다음과 같다.)
@@ -209,7 +213,7 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 (사진14 : 위와 같이 변환 결과를 이메일로 받을 수 있다.) 아래는 변환 결과 예시이다.
 
 ```
-Day till what's your departure date? I'd like to leave on the 10th of July. When are you leaving? When are you planning to leave? When would you like to depart? What's your return date? When will you return? When would you like to return? What day will you be returning? My return date is July 24th. What's the departure time? What's the arrival time? Your flight will arrive at 10:30 a.m. local time. Are you traveling alone? No, I'm traveling with my family.
+Day one. Do you have any seats available? I'm afraid all flights are fully booked. Hello. Is this United Airlines? I'd like to book a flight to L A. I want to reserve a flight to London. Are there any seats available? How much is a ticket to L A? Are there any seats left for Friday? Do you have a direct flight to Sydney? That flight is fully booked? I'm sorry, but that flight is booked up. All seats are booked for July. Can I go stand by? Can you put me on the waiting list?
 ```
 
 ## 주요 AWS 설정 설명
@@ -301,7 +305,7 @@ python의 boto3 라이브러리를 이용하여 transcription job을 생성한�
 ![캡처11](https://github.com/minchoCoin/stt-service/assets/62372650/b2904716-490a-42f5-9260-59354cb64bdf)
 아래는 변환 결과 예시이다.
 ```
-Day till what's your departure date? I'd like to leave on the 10th of July. When are you leaving? When are you planning to leave? When would you like to depart? What's your return date? When will you return? When would you like to return? What day will you be returning? My return date is July 24th. What's the departure time? What's the arrival time? Your flight will arrive at 10:30 a.m. local time. Are you traveling alone? No, I'm traveling with my family.
+Day one. Do you have any seats available? I'm afraid all flights are fully booked. Hello. Is this United Airlines? I'd like to book a flight to L A. I want to reserve a flight to London. Are there any seats available? How much is a ticket to L A? Are there any seats left for Friday? Do you have a direct flight to Sydney? That flight is fully booked? I'm sorry, but that flight is booked up. All seats are booked for July. Can I go stand by? Can you put me on the waiting list?
 ```
 # 활용방안
 1. 강의 녹음을 글로 변환
@@ -331,7 +335,7 @@ Day till what's your departure date? I'd like to leave on the 10th of July. When
 - 이메일을 보내는 방식이 아니라 웹에서 바로 확인할 수 있도록 한다.
 - clova note와 같이 AI 요약 서비스 제공
 - 사용자 지정 단어집 제공
-- 파일을 s3에 바로 업로드하여 길이제한 없애기
+- 파일을 s3에 바로 업로드하여 길이제한 없애기 : [link](https://jw910911.tistory.com/131)
     - 현재는 약 6MB의 제한이 있음
 
 # references
