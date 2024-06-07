@@ -177,8 +177,8 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 
 ### 웹페이지
 
-[!NOTE]
-AWS lambda 함수는 6MB를 초과하는 요청은 거절하도록 설정되어있어
+>[!NOTE]
+>AWS lambda 함수는 6MB를 초과하는 요청은 거절하도록 설정되어있어
 약 6MB이상의 음성파일은 업로드할 수 없습니다. 참고: [aws lambda docs](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/gettingstarted-limits.html)
 
 ![캡처15](https://github.com/minchoCoin/stt-service/assets/62372650/73158ad5-2231-4bad-8074-bb2835dd78ed)
