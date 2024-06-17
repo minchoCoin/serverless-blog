@@ -83,7 +83,6 @@ EventBridge가 lambda 함수를 호출할 이벤트 패턴은 위와 같다.
 ## Project Tree
 ```
 📦 stt-service
-├─ .idea
 ├─ LICENSE
 ├─ README.md
 ├─ README.pdf
