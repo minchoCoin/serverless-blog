@@ -5,6 +5,9 @@ AWS Transcribe를 사용한 음성을 글자로 변환(Speech-To-Text)해주는 
 
 - AWS Transcribe를 사용한 음성노트(SpeechNote) 웹사이트 제작
 
+>[!NOTE]
+> AWS 요금 문제로 AWS 리소스를 삭제하였습니다. 따라서 웹사이트는 더이상 접속할 수 없습니다.
+
 웹사이트 결과물 링크 : [https://d3yte1ymgtgsl.cloudfront.net/](https://d3yte1ymgtgsl.cloudfront.net/)
 
 깃허브 링크 : [https://github.com/minchoCoin/stt-service](https://github.com/minchoCoin/stt-service)
